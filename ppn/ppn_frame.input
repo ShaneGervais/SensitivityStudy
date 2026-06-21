@@ -1,0 +1,9 @@
+&ppn_frame
+        nsource = 1            ! 0: hydrostatic; 1: trajectory
+	trajectory_fn = 'trajectory.input'
+        iabuini = 11            ! how to initialize
+	ini_filename = 'initial_abundance.dat'
+	iolevel = 1            ! controls input/output
+	iplot_flux_option = 1
+	i_flux_integrated = 1
+/

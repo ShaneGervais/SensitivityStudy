@@ -1,0 +1,23 @@
+# Iliadis et al. 2002 Table 12.
+nova_family	reaction_id	reaction	changed_isotopes	changed_isotope_labels
+CO	17O_pg_18F	17O(p,g)18F	18F	F-18
+CO	17O_pa_14N	17O(p,a)14N	17O,18F	O-17,F-18
+CO	22Ne_pg_23Na	22Ne(p,g)23Na	23Na,24Mg,25Mg,26Al	Na-23,Mg-24,Mg-25,Al-26
+CO	23Na_pg_24Mg	23Na(p,g)24Mg	24Mg	Mg-24
+CO	26Mg_pg_27Al	26Mg(p,g)27Al	26Mg	Mg-26
+CO	26Alg_pg_27Si	26Alg(p,g)27Si	26Al	Al-26
+ONe	17O_pg_18F	17O(p,g)18F	17O,18F	O-17,F-18
+ONe	17O_pa_14N	17O(p,a)14N	17O,18F	O-17,F-18
+ONe	17F_pg_18Ne	17F(p,g)18Ne	17O,18F	O-17,F-18
+ONe	18F_pa_15O	18F(p,a)15O	17O,18F	O-17,F-18
+ONe	21Na_pg_22Mg	21Na(p,g)22Mg	21Ne,22Na,22Ne	Ne-21,Na-22,Ne-22
+ONe	23Na_pg_24Mg	23Na(p,g)24Mg	20Ne,21Ne,22Na,23Na,24Mg,25Mg,26Mg,26Al,27Al	Ne-20,Ne-21,Na-22,Na-23,Mg-24,Mg-25,Mg-26,Al-26,Al-27
+ONe	23Mg_pg_24Al	23Mg(p,g)24Al	20Ne,21Ne,22Na,23Na,24Mg	Ne-20,Ne-21,Na-22,Na-23,Mg-24
+ONe	26Mg_pg_27Al	26Mg(p,g)27Al	26Mg	Mg-26
+ONe	26Alg_pg_27Si	26Alg(p,g)27Si	26Al	Al-26
+ONe	26Alm_pg_27Si	26Alm(p,g)27Si	26Mg	Mg-26
+ONe	29Si_pg_30P	29Si(p,g)30P	29Si	Si-29
+ONe	30P_pg_31S	30P(p,g)31S	30Si,32S,33S,34S,35Cl,37Cl,36Ar,37Ar,38Ar	Si-30,S-32,S-33,S-34,Cl-35,Cl-37,Ar-36,Ar-37,Ar-38
+ONe	33S_pg_34Cl	33S(p,g)34Cl	34S,35Cl,36Ar	S-34,Cl-35,Ar-36
+ONe	34S_pg_35Cl	34S(p,g)35Cl	35Cl,36Ar	Cl-35,Ar-36
+ONe	37Ar_pg_38K	37Ar(p,g)38K	37Cl,37Ar,38Ar	Cl-37,Ar-37,Ar-38
