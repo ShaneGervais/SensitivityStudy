@@ -1,0 +1,1750 @@
+{
+  "description": "Iliadis et al. 2002 Table 8 JCH1 one-rate-at-a-time PPN reaction plan.",
+  "nova_case": "ne_nova_1.15_12_X_weiss_mixed",
+  "source_table": "SensitivityStudy/data/iliadis2002/tables/table_08_sensitivity_JCH1.dat",
+  "networksetup": "SensitivityStudy/nova_cases/ne_nova_1.15_12_X_weiss_mixed/ppn/networksetup.txt",
+  "ppn_rate_factor_slot": 1,
+  "usage": "For each run, insert rate_index(1) and rate_factor(1) into ppn_physics.input inside the &ppn_physics namelist.",
+  "reactions": {
+    "3He(a,g)7Be": {
+      "reaction_id": "3He_ag_7Be",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 136,
+      "networksetup_indices": [
+        {
+          "index": 4,
+          "active": true,
+          "source": "VITAL",
+          "kind": "(v,v)",
+          "selected": false
+        },
+        {
+          "index": 136,
+          "active": true,
+          "source": "NACRR",
+          "kind": "(a,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 136",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 136",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "7Be(p,g)8B": {
+      "reaction_id": "7Be_pg_8B",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 7,
+      "networksetup_indices": [
+        {
+          "index": 7,
+          "active": true,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": true
+        },
+        {
+          "index": 172,
+          "active": false,
+          "source": "NACRR",
+          "kind": "(p,g)",
+          "selected": false
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 7",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 7",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "8B(p,g)9C": {
+      "reaction_id": "8B_pg_9C",
+      "factors": [
+        10,
+        2,
+        0.5,
+        0.1
+      ],
+      "selected_rate_index": null,
+      "networksetup_indices": [],
+      "match_status": "missing_from_network",
+      "note": "no matching forward reaction found in this networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": null,
+          "rate_factor_line": null
+        },
+        {
+          "factor": 2,
+          "rate_index_line": null,
+          "rate_factor_line": null
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": null,
+          "rate_factor_line": null
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": null,
+          "rate_factor_line": null
+        }
+      ]
+    },
+    "13N(p,g)14O": {
+      "reaction_id": "13N_pg_14O",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 16,
+      "networksetup_indices": [
+        {
+          "index": 16,
+          "active": true,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": true
+        },
+        {
+          "index": 300,
+          "active": false,
+          "source": "NACRR",
+          "kind": "(p,g)",
+          "selected": false
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 16",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 16",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "14N(p,g)15O": {
+      "reaction_id": "14N_pg_15O",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 17,
+      "networksetup_indices": [
+        {
+          "index": 17,
+          "active": true,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": true
+        },
+        {
+          "index": 310,
+          "active": false,
+          "source": "NACRR",
+          "kind": "(p,g)",
+          "selected": false
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 17",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 17",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "15N(p,a)12C": {
+      "reaction_id": "15N_pa_12C",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 325,
+      "networksetup_indices": [
+        {
+          "index": 18,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,a)",
+          "selected": false
+        },
+        {
+          "index": 325,
+          "active": true,
+          "source": "NACRR",
+          "kind": "(p,a)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 325",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 325",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "16O(p,g)17F": {
+      "reaction_id": "16O_pg_17F",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 393,
+      "networksetup_indices": [
+        {
+          "index": 20,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 393,
+          "active": true,
+          "source": "NACRR",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 393",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 393",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "17O(p,g)18F": {
+      "reaction_id": "17O_pg_18F",
+      "factors": [
+        10,
+        2,
+        0.5,
+        0.1
+      ],
+      "selected_rate_index": 404,
+      "networksetup_indices": [
+        {
+          "index": 22,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 404,
+          "active": true,
+          "source": "NACRR",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 404",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 404",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 404",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 404",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        }
+      ]
+    },
+    "17O(p,a)14N": {
+      "reaction_id": "17O_pa_14N",
+      "factors": [
+        10,
+        2,
+        0.5,
+        0.1
+      ],
+      "selected_rate_index": 406,
+      "networksetup_indices": [
+        {
+          "index": 21,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,a)",
+          "selected": false
+        },
+        {
+          "index": 406,
+          "active": true,
+          "source": "NACRR",
+          "kind": "(p,a)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 406",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 406",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 406",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 406",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        }
+      ]
+    },
+    "17F(p,g)18Ne": {
+      "reaction_id": "17F_pg_18Ne",
+      "factors": [
+        10,
+        2,
+        0.5,
+        0.1
+      ],
+      "selected_rate_index": 461,
+      "networksetup_indices": [
+        {
+          "index": 461,
+          "active": true,
+          "source": "JINAC",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 461",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 461",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 461",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 461",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        }
+      ]
+    },
+    "18F(p,g)19Ne": {
+      "reaction_id": "18F_pg_19Ne",
+      "factors": [
+        10,
+        2,
+        0.5,
+        0.1
+      ],
+      "selected_rate_index": 473,
+      "networksetup_indices": [
+        {
+          "index": 473,
+          "active": true,
+          "source": "JINAC",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 473",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 473",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 473",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 473",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        }
+      ]
+    },
+    "18F(p,a)15O": {
+      "reaction_id": "18F_pa_15O",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 476,
+      "networksetup_indices": [
+        {
+          "index": 476,
+          "active": true,
+          "source": "JINAC",
+          "kind": "(p,a)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 476",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 476",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 476",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 476",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 476",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 476",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "19F(p,a)16O": {
+      "reaction_id": "19F_pa_16O",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 490,
+      "networksetup_indices": [
+        {
+          "index": 25,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,a)",
+          "selected": false
+        },
+        {
+          "index": 490,
+          "active": true,
+          "source": "NACRR",
+          "kind": "(p,a)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 490",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 490",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "20Ne(p,g)21Na": {
+      "reaction_id": "20Ne_pg_21Na",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 618,
+      "networksetup_indices": [
+        {
+          "index": 27,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 618,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 618",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 618",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "21Ne(p,g)22Na": {
+      "reaction_id": "21Ne_pg_22Na",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 632,
+      "networksetup_indices": [
+        {
+          "index": 28,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 632,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 632",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 632",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "22Ne(p,g)23Na": {
+      "reaction_id": "22Ne_pg_23Na",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1
+      ],
+      "selected_rate_index": 646,
+      "networksetup_indices": [
+        {
+          "index": 29,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 646,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 646",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 646",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 646",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 646",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 646",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        }
+      ]
+    },
+    "21Na(p,g)22Mg": {
+      "reaction_id": "21Na_pg_22Mg",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 923,
+      "networksetup_indices": [
+        {
+          "index": 923,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 923",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 923",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 923",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 923",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 923",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 923",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "22Na(p,g)23Mg": {
+      "reaction_id": "22Na_pg_23Mg",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 937,
+      "networksetup_indices": [
+        {
+          "index": 937,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 937",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 937",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "23Na(p,g)24Mg": {
+      "reaction_id": "23Na_pg_24Mg",
+      "factors": [
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 951,
+      "networksetup_indices": [
+        {
+          "index": 32,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 951,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 951",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 951",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 951",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 951",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 951",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "23Na(p,a)20Ne": {
+      "reaction_id": "23Na_pa_20Ne",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 954,
+      "networksetup_indices": [
+        {
+          "index": 31,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,a)",
+          "selected": false
+        },
+        {
+          "index": 954,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,a)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 954",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 954",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "25Mg(p,g)26Alg": {
+      "reaction_id": "25Mg_pg_26Alg",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 34,
+      "networksetup_indices": [
+        {
+          "index": 34,
+          "active": true,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": true
+        },
+        {
+          "index": 1300,
+          "active": false,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": false
+        }
+      ],
+      "match_status": "approx_26Al_unresolved",
+      "note": "Iliadis distinguishes 26Alg/26Alm; this PPN network has only combined 26Al",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 34",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 34",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "25Mg(p,g)26Alm": {
+      "reaction_id": "25Mg_pg_26Alm",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 34,
+      "networksetup_indices": [
+        {
+          "index": 34,
+          "active": true,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": true
+        },
+        {
+          "index": 1300,
+          "active": false,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": false
+        }
+      ],
+      "match_status": "approx_26Al_unresolved",
+      "note": "Iliadis distinguishes 26Alg/26Alm; this PPN network has only combined 26Al",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 34",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 34",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "26Mg(p,g)27Al": {
+      "reaction_id": "26Mg_pg_27Al",
+      "factors": [
+        10,
+        2,
+        0.5
+      ],
+      "selected_rate_index": 1314,
+      "networksetup_indices": [
+        {
+          "index": 36,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 1314,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 1314",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 1314",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 1314",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "26Alg(p,g)27Si": {
+      "reaction_id": "26Alg_pg_27Si",
+      "factors": [
+        10,
+        2,
+        0.5
+      ],
+      "selected_rate_index": 1658,
+      "networksetup_indices": [
+        {
+          "index": 37,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 1658,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "approx_26Al_unresolved",
+      "note": "Iliadis distinguishes 26Alg/26Alm; this PPN network has only combined 26Al",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "26Alm(p,g)27Si": {
+      "reaction_id": "26Alm_pg_27Si",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 1658,
+      "networksetup_indices": [
+        {
+          "index": 37,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 1658,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "approx_26Al_unresolved",
+      "note": "Iliadis distinguishes 26Alg/26Alm; this PPN network has only combined 26Al",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 1658",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "27Al(p,g)28Si": {
+      "reaction_id": "27Al_pg_28Si",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 39,
+      "networksetup_indices": [
+        {
+          "index": 39,
+          "active": true,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": true
+        },
+        {
+          "index": 1672,
+          "active": false,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": false
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 39",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 39",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "28Si(p,g)29P": {
+      "reaction_id": "28Si_pg_29P",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 2055,
+      "networksetup_indices": [
+        {
+          "index": 40,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 2055,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 2055",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 2055",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "29Si(p,g)30P": {
+      "reaction_id": "29Si_pg_30P",
+      "factors": [
+        10,
+        2,
+        0.5,
+        0.1
+      ],
+      "selected_rate_index": 2069,
+      "networksetup_indices": [
+        {
+          "index": 41,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 2069,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 2069",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 2069",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 2069",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 2069",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        }
+      ]
+    },
+    "30Si(p,g)31P": {
+      "reaction_id": "30Si_pg_31P",
+      "factors": [
+        10,
+        2,
+        0.5,
+        0.1
+      ],
+      "selected_rate_index": 2083,
+      "networksetup_indices": [
+        {
+          "index": 42,
+          "active": false,
+          "source": "VITAL",
+          "kind": "(p,g)",
+          "selected": false
+        },
+        {
+          "index": 2083,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 2083",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 2083",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 2083",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 2083",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        }
+      ]
+    },
+    "30P(p,g)31S": {
+      "reaction_id": "30P_pg_31S",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 2474,
+      "networksetup_indices": [
+        {
+          "index": 2474,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 2474",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 2474",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 2474",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 2474",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 2474",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 2474",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "31P(p,a)28Si": {
+      "reaction_id": "31P_pa_28Si",
+      "factors": [
+        10,
+        2,
+        0.5
+      ],
+      "selected_rate_index": 2491,
+      "networksetup_indices": [
+        {
+          "index": 2491,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,a)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 2491",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 2491",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 2491",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "32S(p,g)33Cl": {
+      "reaction_id": "32S_pg_33Cl",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 2918,
+      "networksetup_indices": [
+        {
+          "index": 2918,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 2918",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 2918",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "33S(p,g)34Cl": {
+      "reaction_id": "33S_pg_34Cl",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 2932,
+      "networksetup_indices": [
+        {
+          "index": 2932,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 2932",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 2932",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 2932",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 2932",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 2932",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 2932",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "34S(p,g)35Cl": {
+      "reaction_id": "34S_pg_35Cl",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 2946,
+      "networksetup_indices": [
+        {
+          "index": 2946,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 2946",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 2946",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 2946",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 2946",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 2946",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 2946",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "36Ar(p,g)37K": {
+      "reaction_id": "36Ar_pg_37K",
+      "factors": [
+        2,
+        0.5
+      ],
+      "selected_rate_index": 3904,
+      "networksetup_indices": [
+        {
+          "index": 3904,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 3904",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 3904",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        }
+      ]
+    },
+    "37Ar(p,g)38K": {
+      "reaction_id": "37Ar_pg_38K",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 3918,
+      "networksetup_indices": [
+        {
+          "index": 3918,
+          "active": true,
+          "source": "JINAC",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 3918",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 3918",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 3918",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 3918",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 3918",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 3918",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "38Ar(p,g)39K": {
+      "reaction_id": "38Ar_pg_39K",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 3932,
+      "networksetup_indices": [
+        {
+          "index": 3932,
+          "active": true,
+          "source": "JINAC",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 3932",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 3932",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 3932",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 3932",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 3932",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 3932",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "38K(p,g)39Ca": {
+      "reaction_id": "38K_pg_39Ca",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 4434,
+      "networksetup_indices": [
+        {
+          "index": 4434,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 4434",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 4434",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 4434",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 4434",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 4434",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 4434",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    },
+    "39K(p,g)40Ca": {
+      "reaction_id": "39K_pg_40Ca",
+      "factors": [
+        100,
+        10,
+        2,
+        0.5,
+        0.1,
+        0.01
+      ],
+      "selected_rate_index": 4448,
+      "networksetup_indices": [
+        {
+          "index": 4448,
+          "active": true,
+          "source": "ILI01",
+          "kind": "(p,g)",
+          "selected": true
+        }
+      ],
+      "match_status": "exact",
+      "note": "direct reactant/product match in networksetup.txt",
+      "ppn_runs": [
+        {
+          "factor": 100,
+          "rate_index_line": "rate_index(1) = 4448",
+          "rate_factor_line": "rate_factor(1) = 100.d0"
+        },
+        {
+          "factor": 10,
+          "rate_index_line": "rate_index(1) = 4448",
+          "rate_factor_line": "rate_factor(1) = 10.d0"
+        },
+        {
+          "factor": 2,
+          "rate_index_line": "rate_index(1) = 4448",
+          "rate_factor_line": "rate_factor(1) = 2.d0"
+        },
+        {
+          "factor": 0.5,
+          "rate_index_line": "rate_index(1) = 4448",
+          "rate_factor_line": "rate_factor(1) = 0.5d0"
+        },
+        {
+          "factor": 0.1,
+          "rate_index_line": "rate_index(1) = 4448",
+          "rate_factor_line": "rate_factor(1) = 0.1d0"
+        },
+        {
+          "factor": 0.01,
+          "rate_index_line": "rate_index(1) = 4448",
+          "rate_factor_line": "rate_factor(1) = 0.01d0"
+        }
+      ]
+    }
+  }
+}
